@@ -145,7 +145,6 @@ app.get("/players/:playerId/playerScores",async(request,response)=>{
         player_id = ${playerId};`;
     const playerStatsArray=await database.get(getPlayerStatsQuery);
     response.send(playerStatsArray);
-    );
 });
 
 module.exports = app;
